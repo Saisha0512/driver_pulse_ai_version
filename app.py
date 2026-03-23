@@ -44,30 +44,64 @@ def apply_global_style() -> None:
     st.markdown("""
     <style>
       @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&family=Playfair+Display:wght@700;800&display=swap');
+
       .stApp {
         background: #ffffff;
         color: #0a0a0a;
         font-family: 'DM Sans', sans-serif;
       }
+
       #MainMenu, footer, header { visibility: hidden; }
       .block-container { padding-top: 1.5rem; max-width: 1440px; }
       h1, h2, h3 { color: #0a0a0a !important; }
-      [data-testid="stSidebar"] { background: #f7f7f5; border-right: 1px solid #e5e7eb; }
-      [data-testid="stSidebar"] * { color: #0a0a0a; }
+
+      [data-testid="stSidebar"] {
+        background: #f7f7f5;
+        border-right: 1px solid #e5e7eb;
+      }
+
+      [data-testid="stSidebar"] * {
+        color: #0a0a0a;
+      }
+
       .stButton > button {
-        background: #0a0a0a; color: #ffffff; border: none; border-radius: 10px;
-        font-family: 'DM Sans', sans-serif; font-weight: 600; padding: 0.55rem 1rem;
+        background: #0a0a0a;
+        color: #ffffff;
+        border: none;
+        border-radius: 10px;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 600;
+        padding: 0.55rem 1rem;
       }
-      .stButton > button:hover { background: #222; color: #fff; }
-      .stTextInput > div > div > input, .stSelectbox > div > div {
-        border-radius: 10px !important; border: 1px solid #d1d5db !important; background: #ffffff !important; color: #0a0a0a !important;
+
+      .stButton > button:hover {
+        background: #222;
+        color: #fff;
       }
+
+      .stTextInput > div > div > input,
+      .stSelectbox > div > div {
+        border-radius: 10px !important;
+        border: 1px solid #d1d5db !important;
+        background: #ffffff !important;
+        color: #0a0a0a !important;
+      }
+
       .stSelectbox svg { fill: #0a0a0a !important; }
       .stRadio label { font-family: 'DM Sans', sans-serif; }
-      .app-hero-title { font-family: 'Playfair Display', serif; font-size: 2.4rem; font-weight: 800; letter-spacing: -0.03em; }
-      .app-subtle { color: #6b7280; font-size: 0.95rem; }
 
-      /* FIX FORM LABEL VISIBILITY */
+      .app-hero-title {
+        font-family: 'Playfair Display', serif;
+        font-size: 2.4rem;
+        font-weight: 800;
+        letter-spacing: -0.03em;
+      }
+
+      .app-subtle {
+        color: #6b7280;
+        font-size: 0.95rem;
+      }
+
       div[data-testid="stWidgetLabel"] label,
       div[data-testid="stWidgetLabel"] p,
       .stTextInput label,
@@ -77,24 +111,24 @@ def apply_global_style() -> None:
         opacity: 1 !important;
         font-weight: 600 !important;
       }
-                
-      /* FIX TEXT CURSOR / CARET VISIBILITY */
-     .stTextInput input,
-     .stTextArea textarea,
-     input[type="text"],
-     input[type="password"],
-     input[type="email"] {
-     color: #111111 !important;
-     caret-color: #111111 !important;
-         }
-     .stTextInput input::selection,
-    .stTextArea textarea::selection,
-    input[type="text"]::selection,
-    input[type="password"]::selection,
-    input[type="email"]::selection {
-    background: #dbeafe !important;
-    color: #111111 !important;
-        
+
+      .stTextInput input,
+      .stTextArea textarea,
+      input[type="text"],
+      input[type="password"],
+      input[type="email"] {
+        color: #111111 !important;
+        caret-color: #111111 !important;
+      }
+
+      .stTextInput input::selection,
+      .stTextArea textarea::selection,
+      input[type="text"]::selection,
+      input[type="password"]::selection,
+      input[type="email"]::selection {
+        background: #dbeafe !important;
+        color: #111111 !important;
+      }
     </style>
     """, unsafe_allow_html=True)
 
