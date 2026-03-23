@@ -51,7 +51,8 @@ def apply_global_style() -> None:
         font-family: 'DM Sans', sans-serif;
       }
 
-      #MainMenu, footer, header { visibility: hidden; }
+        #MainMenu, footer { visibility: hidden; }
+        header { visibility: visible; }
       .block-container { padding-top: 1.5rem; max-width: 1440px; }
       h1, h2, h3 { color: #0a0a0a !important; }
 
