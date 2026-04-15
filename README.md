@@ -9,7 +9,7 @@
 | Resource | Link |
 |----------|------|
 | **Live Application** | https://driverpulseaiversion-6xj2xy9ekuxqejuzibdxdb.streamlit.app/ |
-| **GitHub Repository** | https://github.com/Aayush652-ops/driver_pulse_ai_version |
+| **GitHub Repository** | https://github.com/Saisha0512/driver_pulse_ai_version |
 | **Demo Video** | https://drive.google.com/file/d/1g9Ntm-34iygFclV1jTOVlKDk7-HkO9hA/view?usp=sharing |
 
 ---
